@@ -22,9 +22,11 @@ chrome.extension.sendRequest({ action: "getBlackList" }, function(response) {
             $('.follow-btn').css('background', 'red');
             $('.appeal-text').css('border', '5px solid red').css('font-size', '24px')
             $('.ops').html('<p style="color:red;font-weight: bold;font-size: 24px">同志，为了消灭资本家，我们需要你来举报这个资本家，光荣是属于劳动者！</p>')
-            $('.ipt-txt').text('营销号+1');
+            // $('textarea').text('把资本家枪毙了！');
             $('h1').text("同志，这是只会吸血的资本家，你不能看")
-            $('body').append('<video src="https://dl.stream.qqmusic.qq.com/C400002dJn9N3wz9dh.m4a?guid=2706502645&vkey=B7A609D88119ED11CEA47E7A17AC3DE59AC75C343B950857712639102B5972EC2AC9C3FAF61E6BEDE01A3C4A0C9D76CDF74F98A7F86B87DA&uin=2480591482&fromtag=120032" autoplay style="display: none" loop="loop"></video>')
+            $('.item-text').text("资本家不配有禁止转载")
+            // 国际歌俄语版
+            $('body').append('<video src="https://m10.music.126.net/20220924101029/3ed1f8dcdbf7986c88d525e64c6bfb98/yyaac/obj/wonDkMOGw6XDiTHCmMOi/3015968597/dab5/0ea6/76a7/9aef541d190478aad1000a2b353e6278.m4a" autoplay style="display: none" loop="loop"></video>')
         } else {
             if (location.href.indexOf("#") == -1) {
                 // 防止循环重新加载
