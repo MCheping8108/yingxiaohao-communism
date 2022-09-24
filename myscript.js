@@ -25,6 +25,9 @@ chrome.extension.sendRequest({ action: "getBlackList" }, function(response) {
             // $('textarea').text('把资本家枪毙了！');
             $('h1').text("同志，这是只会吸血的资本家，你不能看")
             $('.item-text').text("资本家不配有禁止转载")
+            $('.manuscript-report').css('font-size', '48px')
+            $('.manuscript-report').text('枪毙资本家')
+            $('.info-text').text('你不能三连')
             // 国际歌俄语版
             $('body').append('<video src="https://m10.music.126.net/20220924101029/3ed1f8dcdbf7986c88d525e64c6bfb98/yyaac/obj/wonDkMOGw6XDiTHCmMOi/3015968597/dab5/0ea6/76a7/9aef541d190478aad1000a2b353e6278.m4a" autoplay style="display: none" loop="loop"></video>')
         } else {
