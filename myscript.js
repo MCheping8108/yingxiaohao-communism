@@ -20,6 +20,9 @@ chrome.extension.sendRequest({ action: "getBlackList" }, function(response) {
             document.title = '同志，这是个只会吸血的资本家！你可不兴看！';
             $('.follow-btn').text('我是只会吸血的资本家');
             $('.follow-btn').css('background', 'red');
+            $('.follow-btn').css('color', 'white')
+            $('.following-charge-btn').text('你不能充电')
+            $('.following-charge-btn').css('background', 'red')
             $('.appeal-text').css('border', '5px solid red').css('font-size', '24px')
             $('.ops').html('<p style="color:red;font-weight: bold;font-size: 24px">同志，为了消灭资本家，我们需要你来举报这个资本家，光荣是属于劳动者！</p>')
             // $('textarea').text('把资本家枪毙了！');
