@@ -26,11 +26,16 @@ chrome.extension.sendRequest({ action: "getBlackList" }, function(response) {
             $('.appeal-text').css('border', '5px solid red').css('font-size', '24px')
             $('.ops').html('<p style="color:red;font-weight: bold;font-size: 24px">同志，为了消灭资本家，我们需要你来举报这个资本家，光荣是属于劳动者！</p>')
             // $('textarea').text('把资本家枪毙了！');
+            $('.reply-box-send').remove()
+            $('.reply-box-warp').text('同志，这个资本家的爱好只会夺走创作者的心血，他不配和别人聊天')
+            $('.reply-box-warp').css('background', 'red')
+            $('.reply-box-warp').css('font-size', '18px')
+            $('.reply-box-warp').css('color', 'white')
             $('h1').text("同志，这是只会吸血的资本家，你不能看")
             $('.item-text').text("资本家不配有禁止转载")
             $('.manuscript-report').css('font-size', '48px')
-            $('.manuscript-report').text('枪毙资本家')
-            $('.info-text').text('你不能三连')
+            $('.manuscript-report').text('送到西伯利亚挖土豆')
+            $('.toolbar-left').remove()
             // 国际歌俄语版
             $('body').append('<video src="https://m10.music.126.net/20220924101029/3ed1f8dcdbf7986c88d525e64c6bfb98/yyaac/obj/wonDkMOGw6XDiTHCmMOi/3015968597/dab5/0ea6/76a7/9aef541d190478aad1000a2b353e6278.m4a" autoplay style="display: none" loop="loop"></video>')
         } else {
